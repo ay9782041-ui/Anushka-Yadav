@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Voice Input Form</h2>
+        <form id="voiceForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Speak your name">
+                <button type="button" onclick="startRecognition('name')">🎤</button>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" name="branch" placeholder="Speak your branch">
+                <button type="button" onclick="startRecognition('branch')">🎤</button>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" placeholder="Speak your course"></input>
+                <button type="button" onclick="startRecognition('course')">🎤</button>
+            </div>
+
+            <div class="form-group">
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" placeholder="Speak your college name"></input>
+                <button type="button" onclick="startRecognition('college')">🎤</button>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Speak your message"></textarea>
+                <button type="button" onclick="startRecognition('message')">🎤</button>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
